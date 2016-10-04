@@ -25,6 +25,14 @@
       h2 {
         color: @df-middle-gray;
         font-weight: normal;
+
+        &::after {
+          content: " (click to return)";
+        }
+
+        &:hover, &:focus {
+          color: black;
+        }
       }
     }
   }
