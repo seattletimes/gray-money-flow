@@ -1,1 +1,69 @@
 @import "seattletimes";
+
+.interactive {
+  max-width: 630px;
+}
+
+.bar-stacks {
+  .bar {
+    height: 20px;
+    clear: both;
+    margin: 10px 0;
+    transform-origin: 0 0;
+
+    &.animate {
+      transition: all .3s ease-in-out;
+    }
+
+    &.backgrounded {
+      opacity: .5;
+      filter: ~"desaturate(50%)";
+    }
+  }
+
+  .bar-chunk {
+    height: 20px;
+    background: @df-light-gray;
+    float: left;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+
+    &[data-terminates="false"] {
+      &::before {
+        content: "+";
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+    &[data-terminates="true"] {
+      cursor: default;
+    }
+  }
+}
+
+.bar-chatter {
+  .dot {
+    width: .7em;
+    height: .7em;
+    border-radius: 100%;
+    display: inline-block;
+  }
+}
+
+.makeLevel(@level: level-1; @color: black) {
+  .@{level} {
+    .item-0 { background: darken(@color, 30%) }
+    .item-1 { background: darken(@color, 20%) }
+    .item-2 { background: darken(@color, 10%) }
+    .item-3 { background: @color }
+    .item-4 { background: lighten(@color, 10%) }
+  }
+}
+
+.makeLevel(level-0, @st-dark-red);
+.makeLevel(level-1, @st-dark-orange);
+.makeLevel(level-2, @st-dark-green);
+.makeLevel(level-3, @st-dark-blue);
+.makeLevel(level-4, @st-dark-purple);
