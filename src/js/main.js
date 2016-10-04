@@ -23,7 +23,7 @@ transactions.forEach(function(row, index) {
   lookup[row.recipient].donations.push(row);
 });
 
-var starter = lookup["Working Families"];
+var starter = lookup["New Direction"];
 
 // second run to build the dependency graph
 for (var k in lookup) {
@@ -63,14 +63,13 @@ var renderBar = function(pac) {
   var div = document.createElement("div");
   div.className = "bar-container";
   div.innerHTML = `
-    <h2>${pac.pac}</h2>
+    <h2 data-id="${pac.id}">${pac.pac}</h2>
     <div class="bar">${sections.join("\n")}</div>
   `;
   return div;
 };
 
 var renderKey = function(pac) {
-  console.log(pac);
   var items = pac.donations.map(function(d, i) {
     return `
       <li>
@@ -81,7 +80,8 @@ var renderKey = function(pac) {
   var key = document.createElement("div");
   key.className = "key-chatter";
   key.innerHTML = `
-    <p class="raised">${pac.raised ? "Total funding: $" + formatMoney(pac.raised) : ""}
+    <p class="raised cash">${pac.raised ? "Total funding: $" + formatMoney(pac.raised) : ""}
+    <p class="donated cash">From donations: $${formatMoney(pac.funded)}
     <p class="note">${pac.note || ""}
     <ul>${items.join("\n")}</ul>
   `
@@ -119,6 +119,9 @@ stackContainer.addEventListener("click", function(e) {
       b.parentElement.removeChild(b);
     }
   });
+
+  // did you click the name to jump back up?
+  if (e.target.tagName.toLowerCase() == "h2") clickedBar.classList.remove("backgrounded");
 
   // render the new bar and add it to the stack
   var donor = transactions[id].donor;
