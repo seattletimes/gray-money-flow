@@ -34,12 +34,14 @@
     "note": "Has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah)."
   },
   "The Leadership Council": {
-    "raised": 1115445
+    "raised": 1115445,
+    "note": "All funding for Working Families comes from another ambiguously-named PAC, the Leadership Council."
   },
   "Republican State Leadership Committee": {
-    "raised": 19100000
+    "raised": 19100000,
+    "note": "The US Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money.\""
   },
-  "STRAT PAC": {
+  "Strat PAC": {
     "raised": 105000,
     "note": "The top donors to STRAT PAC are debt collection companies."
   },
