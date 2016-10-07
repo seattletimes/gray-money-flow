@@ -56,7 +56,7 @@ var renderBar = function(pac) {
   var div = document.createElement("div");
   div.className = "bar-container";
   div.innerHTML = `
-    <h2 data-id="${pac.id}">${pac.pac}</h2>
+    <h2 data-donor="${pac.pac}">${pac.pac}</h2>
     <div class="bar">${sections.join("\n")}</div>
   `;
   return div;
@@ -75,8 +75,8 @@ var renderKey = function(pac) {
   key.innerHTML = `
     <p class="raised cash">${pac.raised ? "Total funding: $" + formatMoney(pac.raised) : ""}
     <p class="donated cash">From donations: $${formatMoney(pac.funded)}
-    <p class="note">${pac.note || ""}
     <ul>${items.join("\n")}</ul>
+    <p class="note">${pac.note || ""}
   `
   return key;
 };
@@ -100,8 +100,9 @@ var initialize = function(element) {
   stackContainer.addEventListener("click", function(e) {
     //check if this is a valid click target
     var id = e.target.getAttribute("data-id");
+    var donorName = e.target.getAttribute("data-donor");
     var terminates = e.target.getAttribute("data-terminates") == "true";
-    if (!id || terminates) return;
+    if ((!id && !donorName) || terminates) return;
 
     // add styling for the new active bar section
     var clickedBar = closest(e.target, ".bar-container");
@@ -120,30 +121,35 @@ var initialize = function(element) {
       }
     });
 
+    var donor;
+
     // did you click the name to jump back up?
-    if (e.target.tagName.toLowerCase() == "h2") clickedBar.classList.remove("backgrounded");
+    if (donorName) {
+      clickedBar.classList.remove("backgrounded");
+      donor = lookup[donorName];
+    } else {
+      // render the new bar and add it to the stack
+      donor = transactions[id].donor;
+      if (!donor) return console.error("Bad donor", id);
+      var stackItem = renderBar(donor)
+      stackItem.classList.add(`level-${clickedIndex+1}`);
+      stackContainer.appendChild(stackItem);
+      var bar = stackItem.querySelector(".bar");
 
-    // render the new bar and add it to the stack
-    var donor = transactions[id].donor;
-    if (!donor) return console.error("Bad donor", id);
-    var stackItem = renderBar(donor)
-    stackItem.classList.add(`level-${clickedIndex+1}`);
-    stackContainer.appendChild(stackItem);
-    var bar = stackItem.querySelector(".bar");
-
-    // FLIP animation out from the clicked section into its new stack location
-    var parentBounds = e.target.getBoundingClientRect();
-    var childBounds = bar.getBoundingClientRect();
-    var flip = {
-      x: parentBounds.left - childBounds.left,
-      y: parentBounds.top - childBounds.top,
-      width: parentBounds.width / childBounds.width,
-      height: parentBounds.height / childBounds.height
+      // FLIP animation out from the clicked section into its new stack location
+      var parentBounds = e.target.getBoundingClientRect();
+      var childBounds = bar.getBoundingClientRect();
+      var flip = {
+        x: parentBounds.left - childBounds.left,
+        y: parentBounds.top - childBounds.top,
+        width: parentBounds.width / childBounds.width,
+        height: parentBounds.height / childBounds.height
+      }
+      bar.style.transform = `translate(${flip.x}px, ${flip.y}px) scale(${flip.width}, ${flip.height})`;
+      var reflow = document.body.offsetWidth;
+      bar.classList.add("animate");
+      bar.style.transform = "";
     }
-    bar.style.transform = `translate(${flip.x}px, ${flip.y}px) scale(${flip.width}, ${flip.height})`;
-    var reflow = document.body.offsetWidth;
-    bar.classList.add("animate");
-    bar.style.transform = "";
 
     // add the description
     chatter.innerHTML = "";

@@ -1,12 +1,15 @@
 {
   "New Direction": {
-    "raised": 1305000
+    "raised": 1305000,
+    "note": "New Direction is funded by three primary donors: two presidentially-named funds, and Dime PAC."
   },
   "Kennedy Fund": {
-    "raised": 1264128
+    "raised": 1264128,
+    "note": "In addition to unions and gaming, Kennedy gets its donations from a PAC named Justice for All."
   },
   "Truman Fund": {
-    "raised": 2125894
+    "raised": 2125894,
+    "note": "Like the Kennedy Fund, the Truman Fund gets most of its donations from unions, including the service industry, teachers, and state employees."
   },
   "Dime PAC": {
     "raised": 432426,
@@ -17,7 +20,7 @@
   "Washington Indian Gaming Association": {},
   "Justice For All": {
     "raised": 990133,
-    "note": "Justice For All is listed for donor purposes under as \"Washington State Association for Justice\""
+    "note": "Justice For All is listed for donor purposes under as \"Washington State Association for Justice,\" and its top donors are actually individuals."
   },
   "Washington Education Association": {},
   "SEIU 1199": {},
@@ -31,24 +34,22 @@
   "James Holman": {},
   "Working Families": {
     "raised": 450135,
-    "note": "Has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah)."
+    "note": "Working Families has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah). But its funding comes entirely from another PAC, the vaguely-named Leadership Council."
   },
   "The Leadership Council": {
     "raised": 1115445,
-    "note": "All funding for Working Families comes from another ambiguously-named PAC, the Leadership Council."
+    "note": "The Leadership Council, in turn, is funded by the Republican State Leadership Committee (which is itself funded by the US Chamber of Commerce) and Strat PAC."
   },
   "Republican State Leadership Committee": {
     "raised": 19100000,
-    "note": "The US Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money.\""
+    "note": "The US Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money,\" so the trail ends here."
   },
   "Strat PAC": {
     "raised": 105000,
-    "note": "The top donors to STRAT PAC are debt collection companies."
+    "note": "The top donors to STRAT PAC are three debt collection companies."
   },
   "Dynamic Collectors": {},
   "Merchants Credit Association": {},
   "Washington Collectors Tri-cities": {},
-  "US Chamber of Commerce": {
-    "note": "The US Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money.\""
-  }
+  "US Chamber of Commerce": {}
 }

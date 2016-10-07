@@ -22,12 +22,17 @@
         opacity: .5;
         filter: ~"desaturate(50%)";
       }
+
       h2 {
         color: @df-middle-gray;
         font-weight: normal;
 
         &::after {
           content: " (click to return)";
+
+          @media @mobile {
+            content: " (tap to return)"
+          }
         }
 
         &:hover, &:focus {
