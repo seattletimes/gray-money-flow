@@ -1,4 +1,5 @@
 require("component-responsive-frame/child");
+require("./lib/ads");
 
 var closest = require("./lib/closest");
 var $ = require("./lib/qsa");
@@ -74,7 +75,7 @@ var renderKey = function(pac) {
   key.className = "key-chatter";
   key.innerHTML = `
     <p class="raised cash">${pac.raised ? "Total funding: $" + formatMoney(pac.raised) : ""}
-    <p class="donated cash">From donations: $${formatMoney(pac.funded)}
+    <p class="donated cash">Top donors: $${formatMoney(pac.funded)}
     <ul>${items.join("\n")}</ul>
     <p class="note">${pac.note || ""}
   `

@@ -5,11 +5,11 @@
   },
   "Kennedy Fund": {
     "raised": 1264128,
-    "note": "In addition to unions and gaming, Kennedy gets its donations from a PAC named Justice for All."
+    "note": "In addition to unions and tribes, Kennedy gets its donations from a PAC named Justice for All."
   },
   "Truman Fund": {
     "raised": 2125894,
-    "note": "Like the Kennedy Fund, the Truman Fund gets most of its donations from unions, including the service industry, teachers, and state employees."
+    "note": "Like the Kennedy Fund, the Truman Fund gets most of its donations from unions, including those representing service industry workers, teachers and state employees."
   },
   "Dime PAC": {
     "raised": 432426,
@@ -18,9 +18,9 @@
   "SEIU 775": {},
   "SEIU Washington State Council": {},
   "Washington Indian Gaming Association": {},
-  "Justice For All": {
+  "Justice for All": {
     "raised": 990133,
-    "note": "Justice For All is listed for donor purposes under as \"Washington State Association for Justice,\" and its top donors are actually individuals."
+    "note": "Justice For All is listed with the state Public Disclosure Commission under \"Washington State Association for Justice,\" and its top donors are lawyers."
   },
   "Washington Education Association": {},
   "SEIU 1199": {},
@@ -34,11 +34,11 @@
   "James Holman": {},
   "Working Families": {
     "raised": 450135,
-    "note": "Working Families has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah). But its funding comes entirely from another PAC, the vaguely-named Leadership Council."
+    "note": "Working Families has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council."
   },
   "The Leadership Council": {
     "raised": 1115445,
-    "note": "The Leadership Council, in turn, is funded by the Republican State Leadership Committee (which is itself funded by the US Chamber of Commerce) and Strat PAC."
+    "note": "The Leadership Council, in turn, counts as its top two donors the Republican State Leadership Committee (whose largest donor is the US Chamber of Commerce) and Strat PAC."
   },
   "Republican State Leadership Committee": {
     "raised": 19100000,
@@ -46,7 +46,7 @@
   },
   "Strat PAC": {
     "raised": 105000,
-    "note": "The top donors to STRAT PAC are three debt collection companies."
+    "note": "Strat PAC is funded by debt collection companies."
   },
   "Dynamic Collectors": {},
   "Merchants Credit Association": {},
