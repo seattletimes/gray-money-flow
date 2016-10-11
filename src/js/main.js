@@ -1,5 +1,4 @@
 require("component-responsive-frame/child");
-require("./lib/ads");
 
 var closest = require("./lib/closest");
 var $ = require("./lib/qsa");
