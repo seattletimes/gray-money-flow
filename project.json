@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2016/politics/gray-money"
     }
   },
   "title": "",
@@ -16,6 +16,6 @@
   "tags": [],
   "image": "assets/social.jpg",
   "sheets": ["1ub6MTVLZDy86g4f5yFayXbflH0La1HS0RxaHI-RMV50"],
-  "production": false,
+  "production": true,
   "embedded": true
 }
