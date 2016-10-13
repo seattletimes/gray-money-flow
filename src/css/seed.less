@@ -86,10 +86,9 @@
 
 .bar-chatter {
   .dot {
-    width: .7em;
-    height: .7em;
-    border-radius: 100%;
-    display: inline-block;
+    width: 100%;
+    height: 8px;
+    display: block;
   }
 
   ul {
@@ -97,15 +96,38 @@
     padding: 0;
     margin: 0;
     font-size: 15px;
+    .display-flex();
+
+    li {
+      padding-right: 8px;
+      .flex(1);
+
+      @media @mobile {
+        font-size: 13px;
+      }
+    }
+
+    .donation-name {
+      font-weight: bold;
+    }
   }
 
   .note {
-
   }
 
   .cash {
     font-size: 15px;
     margin: 0;
+  }
+
+  h3.key {
+    font-size: 14px;
+    font-weight: normal;
+    color: @df-middle-gray;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid @df-light-gray;
+    display: none;
   }
 }
 

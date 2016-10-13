@@ -67,16 +67,18 @@ var renderKey = function(pac) {
     return `
       <li>
         <span class="dot item-${i}"></span>
-        ${d.donor.pac} - $${formatMoney(d.amount)}
+        <div class="donation-name">${d.donor.pac}</div>
+        <div class="donation-amount">$${formatMoney(d.amount)}</div>
     `
   });
   var key = document.createElement("div");
   key.className = "key-chatter";
   key.innerHTML = `
     <p class="raised cash">${pac.raised ? "Total funding: $" + formatMoney(pac.raised) : ""}
-    <p class="donated cash">Top donors: $${formatMoney(pac.funded)}
-    <ul>${items.join("\n")}</ul>
+    <p class="donated cash">From top donors: $${formatMoney(pac.funded)}
     <p class="note">${pac.note || ""}
+    <h3 class="key">Top donors</h3>
+    <ul>${items.join("\n")}</ul>
   `
   return key;
 };

@@ -1,25 +1,26 @@
 {
   "New Direction": {
-    "raised": 1305000,
-    "note": "New Direction is funded by three primary donors: two presidentially-named funds, and Dime PAC."
+    "raised": 2887760,
+    "note": "New Direction is funded by three primary donors: the Truman Fund, the Kennedy Fund and Dime PAC.",
+    "undefined": "It has spent over $400,000 (so far) attacking Republican state Senate candidates Steve Litzow and Lynda Wilson. "
   },
   "Kennedy Fund": {
-    "raised": 1264128,
-    "note": "In addition to unions and tribes, Kennedy gets its donations from a PAC named Justice for All."
+    "raised": 1555627,
+    "note": "The top three donors to the Kennedy Fund are SEIU Washington State Council, SEIU Local 775 and SEIU Local 1199."
   },
   "Truman Fund": {
-    "raised": 2125894,
-    "note": "Like the Kennedy Fund, the Truman Fund gets most of its donations from unions, including those representing service industry workers, teachers and state employees."
+    "raised": 2716894,
+    "note": "Like the Kennedy Fund, the Truman Fund counts unions as it top donors, with the Washington Education Association, SEIU Washington State Council, and SEIU Locals 775 and 1199 leading the way."
   },
   "Dime PAC": {
-    "raised": 432426,
+    "raised": 191956,
     "note": "Dime PAC is organized by the Washington State Labor Council."
   },
   "SEIU 775": {},
   "SEIU Washington State Council": {},
   "Washington Indian Gaming Association": {},
   "Justice for All": {
-    "raised": 990133,
+    "raised": 358146,
     "note": "Justice For All is listed with the state Public Disclosure Commission under \"Washington State Association for Justice,\" and its top donors are lawyers."
   },
   "Washington Education Association": {},
@@ -33,11 +34,12 @@
   "Tim Ford": {},
   "James Holman": {},
   "Working Families": {
-    "raised": 450135,
-    "note": "Working Families has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council."
+    "raised": 600135,
+    "note": "Working Families has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council.",
+    "undefined": "000 (so far) opposing State Sen. Mark Mullet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council."
   },
   "The Leadership Council": {
-    "raised": 1115445,
+    "raised": 2253290,
     "note": "The Leadership Council, in turn, counts as its top two donors the Republican State Leadership Committee (whose largest donor is the US Chamber of Commerce) and Strat PAC."
   },
   "Republican State Leadership Committee": {
@@ -45,7 +47,7 @@
     "note": "The US Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money,\" so the trail ends here."
   },
   "Strat PAC": {
-    "raised": 105000,
+    "raised": 105902,
     "note": "Strat PAC is funded by debt collection companies."
   },
   "Dynamic Collectors": {},

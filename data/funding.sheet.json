@@ -2,22 +2,22 @@
   {
     "donor": "Kennedy Fund",
     "recipient": "New Direction",
-    "amount": 560000
+    "amount": 1500000
   },
   {
     "donor": "Truman Fund",
     "recipient": "New Direction",
-    "amount": 355000
+    "amount": 810000
   },
   {
     "donor": "Dime PAC",
     "recipient": "New Direction",
-    "amount": 150000
+    "amount": 175000
   },
   {
-    "donor": "SEIU 775",
+    "donor": "SEIU Washington State Council",
     "recipient": "Kennedy Fund",
-    "amount": 100000
+    "amount": 150000
   },
   {
     "donor": "SEIU Washington State Council",
@@ -25,7 +25,7 @@
     "amount": 195000
   },
   {
-    "donor": "Washington Indian Gaming Association",
+    "donor": "SEIU Local 1199",
     "recipient": "Kennedy Fund",
     "amount": 50000
   },
@@ -50,16 +50,6 @@
     "amount": 9000
   },
   {
-    "donor": "Tim Ford",
-    "recipient": "Justice for All",
-    "amount": 3300
-  },
-  {
-    "donor": "James Holman",
-    "recipient": "Justice for All",
-    "amount": 5600
-  },
-  {
     "donor": "Washington Education Association ",
     "recipient": "Truman Fund",
     "amount": 420000
@@ -77,7 +67,7 @@
   {
     "donor": "SEIU 1199",
     "recipient": "Truman Fund",
-    "amount": 100000
+    "amount": 200000
   },
   {
     "donor": "UFCW Local 21",
@@ -97,12 +87,12 @@
   {
     "donor": "The Leadership Council",
     "recipient": "Working Families",
-    "amount": 450000
+    "amount": 600135
   },
   {
     "donor": "Republican State Leadership Committee",
     "recipient": "The Leadership Council",
-    "amount": 250000
+    "amount": 400000
   },
   {
     "donor": "Strat PAC",
@@ -120,12 +110,12 @@
     "amount": 42000
   },
   {
-    "donor": "Merchants Credit Association",
+    "donor": "Merchants' Credit Association",
     "recipient": "Strat PAC",
     "amount": 20000
   },
   {
-    "donor": "Washington Collectors Tri-cities",
+    "donor": "Washington Collectors Tri-Cities",
     "recipient": "Strat PAC",
     "amount": 10000
   }
