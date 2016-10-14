@@ -1,8 +1,7 @@
 {
   "New Direction": {
     "raised": 2887760,
-    "note": "New Direction is funded by three primary donors: the Truman Fund, the Kennedy Fund and Dime PAC.",
-    "undefined": "It has spent over $400,000 (so far) attacking Republican state Senate candidates Steve Litzow and Lynda Wilson. "
+    "note": "New Direction is funded by three primary donors: two Democratic PACs (the Truman Fund and the Kennedy Fund) and Dime PAC. It has spent over $400,000 (so far) attacking Republican state Senate candidates Steve Litzow and Lynda Wilson. "
   },
   "Kennedy Fund": {
     "raised": 1555627,
@@ -34,17 +33,16 @@
   "Tim Ford": {},
   "James Holman": {},
   "Working Families": {
-    "raised": 600135,
-    "note": "Working Families has spent $337,000 (so far) opposing State Sen. Mark Millet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council.",
-    "undefined": "000 (so far) opposing State Sen. Mark Mullet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council."
+    "raised": 800000,
+    "note": "Working Families has spent $395,000 (so far) opposing State Sen. Mark Mullet (D-Issaquah). Its funding comes entirely from another PAC, the vaguely-named Leadership Council."
   },
   "The Leadership Council": {
     "raised": 2253290,
-    "note": "The Leadership Council, in turn, counts as its top two donors the Republican State Leadership Committee (whose largest donor is the US Chamber of Commerce) and Strat PAC."
+    "note": "The Leadership Council, in turn, counts as its top two donors the Republican State Leadership Committee (whose largest donor is the U.S. Chamber of Commerce) and Strat PAC."
   },
   "Republican State Leadership Committee": {
     "raised": 19100000,
-    "note": "The US Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money,\" so the trail ends here."
+    "note": "The U.S. Chamber does not disclose donors to its 501(c)6 non-profit, which places it in the category of \"dark money,\" so the trail ends here."
   },
   "Strat PAC": {
     "raised": 105902,
@@ -53,5 +51,5 @@
   "Dynamic Collectors": {},
   "Merchants Credit Association": {},
   "Washington Collectors Tri-cities": {},
-  "US Chamber of Commerce": {}
+  "U.S. Chamber of Commerce": {}
 }
